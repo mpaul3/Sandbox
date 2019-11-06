@@ -1,0 +1,23 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-4">
+			<app-chart chartType="singleValue" [query]="usersQuery" title="Total Users"></app-chart>
+		</div>
+		<div class="col-sm-4">
+			<app-chart chartType="singleValue" [query]="ordersQuery" title="Total Orders"></app-chart>
+		</div>
+		<div class="col-sm-4">
+			<app-chart chartType="singleValue" [query]="shippedOrdersQuery" title="Shipped Orders"></app-chart>
+		</div>
+	</div>
+	<br />
+	<br />
+	<div class="row">
+		<div class="col-sm-6">
+			<app-chart chartType="line" [query]="lineChartQuery" title="New Users Over Time"></app-chart>
+		</div>
+		<div class="col-sm-6">
+			<app-chart chartType="stackedBar" [query]="stackedBarChartQuery" title="Orders by Status Over time"></app-chart>
+		</div>
+	</div>
+</div>
